@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <title> Learning html!</title>
+ <link rel="stylesheet" href="./Learning html!_files/style.css"></head>
+ <body>
+   
+    <header>
+       <h1>MarioClub</h1>
+   </header> 
+
+   <section class="banner">
+     <img src="./Learning html!_files/banner.png" alt="Mario Club welcome banner">
+     <div class="welcome"><br>
+       <h2>
+         Welcome to <br> <span>Mario Club</span> 
+       </h2>
+     </div>
+   </section>
+   <nav class="main-nav">
+       <ul>
+          <li><a href="http://127.0.0.1:5500/join.html" class="join">Join the Club</a></li> 
+          <li><a href="http://127.0.0.1:5500/news.html">Latest news</a></li>
+          <li><a href="https://supermarioplay.com/">Play the game</a></li>
+          <li><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
+       </ul>
+   </nav>
+   <main>
+       <article>
+           <h2>It's me, Mario!</h2>
+           <p>I am a fictional character created by Japanese video game designer Shigeru Miyamoto.
+             I am the the title character of the Mario video game franchise and the mascot of Japanese video
+             game company Nintendo.
+             I have appeared in over 200 video games since his creation. 
+             Depicted as a short, pudgy, Italian plumber who resides in the Mushroom Kingdom,
+             his adventures generally center on rescuing
+             Princess Peach from the Koopa villain Bowser. 
+             I have access to a variety of power-ups that give him different abilities.
+             My fraternal twin brother and sidekick is Luigi.
+            I first appeared as the player character of Donkey Kong (1981), a platform game.</p>
+       </article>
+       <ul class="images">
+           <li><img src="./Learning html!_files/thumb-1.png" alt="Mario thumb-1"></li>
+           <li><img src="./Learning html!_files/thumb-2.png" alt="Mario thumb-2"> </li>
+       </ul>
+   </main>
+   <section class="join">
+       <h2> Join Today!</h2>
+       <p>Enter your email and join this fun club today! Hurry!!</p>
+       <form>
+           <input type="email" name="email" placeholder="Type your email" required="">
+       </form>
+       <p class="note">Once you join, you will recieve an confirmation on your entered email id.</p>
+   </section>
+   <footer>
+       <p class="copyright"> Copyright 2021 MarioClub</p>
+   </footer>
+ 
+ <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
